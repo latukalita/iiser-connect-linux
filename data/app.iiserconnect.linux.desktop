@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=IISER Connect
+GenericName=Campus network sign-in
+Comment=Signs you in to the IISER campus network automatically
+Exec=@BIN@/iiser-connect gui
+Icon=app.iiserconnect.linux
+Terminal=false
+Categories=Network;
+Keywords=wifi;login;gateway;iiser;captive;portal;
+StartupNotify=true

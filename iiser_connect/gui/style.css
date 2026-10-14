@@ -1,0 +1,61 @@
+/* IISER Connect - gradient/glass styling on top of libadwaita */
+
+@define-color accent_color #22d3ee;
+@define-color accent_bg_color #0ea5e9;
+@define-color accent_fg_color #ffffff;
+
+switch:checked { background-image: linear-gradient(90deg, #22d3ee, #6366f1); background-color: transparent; }
+switch:checked slider { background-color: #ffffff; }
+
+.app-bg.dark  { background-image: linear-gradient(180deg, #070b1e 0%, #111b3e 100%); }
+.app-bg.light { background-image: linear-gradient(180deg, #f4f7ff 0%, #e3eaff 100%); }
+
+.hero-title { font-size: 27px; font-weight: 800; letter-spacing: -0.4px; }
+.hero-title-big { font-size: 31px; font-weight: 800; letter-spacing: -0.5px; }
+.hero-sub   { font-size: 14px; opacity: 0.72; }
+.caption-caps { font-size: 11px; font-weight: 700; letter-spacing: 1.2px; opacity: 0.62; }
+.small-dim  { font-size: 12px; opacity: 0.62; }
+
+/* Frosted cards */
+.glass { border-radius: 22px; padding: 4px; }
+.dark  .glass { background-color: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); }
+.light .glass { background-color: rgba(255,255,255,0.72); border: 1px solid rgba(30,42,90,0.12); }
+
+.glass list, .glass row { background: transparent; }
+.glass row { border-radius: 18px; }
+.glass list.boxed-list { background: transparent; border: none; box-shadow: none; }
+
+.stat-value { font-size: 16px; font-weight: 700; }
+.stat-label { font-size: 12px; opacity: 0.62; }
+.stat-sep   { min-width: 1px; background-color: rgba(128,140,180,0.30); margin: 6px 0; }
+
+/* Primary gradient button */
+button.gradient {
+  background-image: linear-gradient(90deg, #22d3ee, #6366f1);
+  color: #ffffff; border: none; border-radius: 18px;
+  min-height: 52px; font-weight: 700; font-size: 15px;
+  box-shadow: 0 6px 20px rgba(99,102,241,0.35);
+}
+button.gradient:hover   { background-image: linear-gradient(90deg, #3bddf5, #7679f5); }
+button.gradient:active  { background-image: linear-gradient(90deg, #1cb8d0, #5558dd); }
+button.gradient:disabled { opacity: 0.45; box-shadow: none; }
+
+button.ghost { border-radius: 18px; min-height: 50px; font-weight: 600; font-size: 15px; }
+.dark  button.ghost { background-color: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); background-image: none; }
+.light button.ghost { background-color: rgba(255,255,255,0.8);  border: 1px solid rgba(30,42,90,0.14);   background-image: none; }
+
+button.warn-ghost label { color: #d97706; font-weight: 700; }
+.dark button.warn-ghost label { color: #fbbf24; }
+
+.dot { font-size: 14px; }
+.dot-success { color: #34d399; }
+.dot-info    { color: #22d3ee; }
+.dot-warning { color: #fbbf24; }
+.dot-error   { color: #fb7185; }
+
+.icon-chip { border-radius: 14px; padding: 9px; background-color: rgba(34,211,238,0.16); color: #22d3ee; }
+.icon-chip.small { padding: 6px; border-radius: 12px; }
+.icon-chip.warn { background-color: rgba(251,191,36,0.18); color: #fbbf24; }
+
+headerbar.flat, .app-bg headerbar { background: transparent; box-shadow: none; border: none; }
+entry, passwordentry { border-radius: 14px; }
