@@ -85,3 +85,7 @@ tools/shot.sh home dark out.png              # render a screen to a PNG (XWaylan
 
 The mock portal reproduces the gateway's replies (success, wrong password, login limit, session
 expiry), so none of this needs - or touches - your real account.
+
+## License
+
+MIT - see [LICENSE](LICENSE).
